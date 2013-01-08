@@ -36,12 +36,12 @@ public class StructTest {
 
 	@Test
 	public void testSet() {
-		assertEquals(1, memory.get(0));
-		assertEquals(2, memory.get(1));
-		assertEquals(3, memory.get(2));
-		assertEquals(4, memory.get(3));
-		assertEquals(5, memory.get(4));
-		assertEquals(6, memory.get(5));
+		assertEquals(1, memory.getByte(0));
+		assertEquals(2, memory.getByte(1));
+		assertEquals(3, memory.getByte(2));
+		assertEquals(4, memory.getByte(3));
+		assertEquals(5, memory.getByte(4));
+		assertEquals(6, memory.getByte(5));
 	}
 
 	@Test

@@ -79,11 +79,11 @@ public abstract class Struct {
 		}
 
 		public byte get() {
-			return struct().pointer().get(offset());
+			return struct().pointer().getByte(offset());
 		}
 
 		public void set(byte value) {
-			struct().pointer().set(offset(), value);
+			struct().pointer().setByte(offset(), value);
 		}
 	}
 
