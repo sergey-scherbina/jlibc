@@ -55,7 +55,7 @@ public interface Memory {
 		}
 
 		public final void move(final Pointer pointer) {
-			address += pointer.address;
+			address = pointer.address;
 		}
 
 		@Override
