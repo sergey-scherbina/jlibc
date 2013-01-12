@@ -28,20 +28,20 @@ public class StructTest2 {
 	public void testOffset() {
 		assertEquals(0, struct.f1().offset());
 		assertEquals(1, struct.s1().f1().offset());
-		assertEquals(2, struct.s2().f2().offset());
-		assertEquals(3, struct.f2().offset());
-		assertEquals(4, struct.s2().f1().offset());
-		assertEquals(5, struct.s2().f2().offset());
+		assertEquals(2, struct.s1().f2().offset());
+		assertEquals(6, struct.f2().offset());
+		assertEquals(8, struct.s2().f1().offset());
+		assertEquals(9, struct.s2().f2().offset());
 	}
 
 	@Test
 	public void testSet() {
 		assertEquals(1, memory.getByte(0));
 		assertEquals(2, memory.getByte(1));
-		assertEquals(3, memory.getByte(2));
-		assertEquals(4, memory.getByte(3));
-		assertEquals(5, memory.getByte(4));
-		assertEquals(6, memory.getByte(5));
+		assertEquals(3, memory.getByte(5));
+		assertEquals(4, memory.getByte(7));
+		assertEquals(5, memory.getByte(8));
+		assertEquals(6, memory.getByte(12));
 	}
 
 	@Test
